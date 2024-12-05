@@ -1,0 +1,28 @@
+{
+  "name": "claude-github-snyk",
+  "version": "1.0.0",
+  "description": "GitHub Integration Server with Snyk security scanning for Claude",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "claude-github-snyk": "./dist/index.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "snyk": "^1.1025.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.6",
+    "@types/axios": "^0.14.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.4"
+  },
+  "keywords": ["github", "snyk", "security", "claude", "mcp"],
+  "license": "MIT"
+}
